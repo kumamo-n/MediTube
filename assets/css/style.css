@@ -1482,8 +1482,17 @@ footer {
   .cont0-sp .links div a {
     max-width: 100%;
   }
-  .cta .links div a:last-child,
-  .cont0-sp .links div a:last-child {
+  .cta .links div a:last-child {
+    margin-top: 56px;
+  }
+
+  .cont0-links {
+    background: #ffffff;
+    width: 90%;
+    padding: 32px 16px;
+    border-radius: 23px;
+  }
+  .cont0-links div:last-child {
     margin-top: 56px;
   }
 }
@@ -1954,7 +1963,7 @@ footer {
   }
   .cta .links,
   .cont0-sp .links {
-    width: 303px;
+    width: 80%;
   }
 
   .cont0-sp .links div a span,
