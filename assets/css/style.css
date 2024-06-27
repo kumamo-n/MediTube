@@ -474,6 +474,9 @@ section h2.sec_ttl .big {
   margin: 60px auto 10px;
   justify-content: center;
 }
+.cont0-sp .links {
+  margin: 32px auto;
+}
 
 .cta .links div a,
 .cont0-sp .links div a {
@@ -519,6 +522,29 @@ section h2.sec_ttl .big {
   margin: 0 2px 0px 0;
   position: relative;
   top: 2px;
+}
+.cont0-sp .links div:last-child a:after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.cont0-sp .links div a:after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #1d646d;
+  border-bottom: 2px solid #1d646d;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .cta .links div a:after {
@@ -1489,7 +1515,7 @@ footer {
   .cont0-links {
     background: #ffffff;
     width: 90%;
-    padding: 32px 16px;
+    padding: 24px 16px;
     border-radius: 23px;
   }
   .cont0-links div:last-child {
@@ -1963,7 +1989,7 @@ footer {
   }
   .cta .links,
   .cont0-sp .links {
-    width: 80%;
+    width: 90%;
   }
 
   .cont0-sp .links div a span,
