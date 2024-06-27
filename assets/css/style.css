@@ -1542,6 +1542,10 @@ footer {
     z-index: 1000;
   }
 
+  .menu-item {
+    cursor: pointer;
+  }
+
   body.active {
     background: #fff;
   }

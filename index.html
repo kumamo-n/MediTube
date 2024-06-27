@@ -33,13 +33,13 @@
                 </ul>
 
                 <ul class="menu-sp">
-                    <li id="menu-item"><a href="#link_1" style="all: unset">MediTubeとは</a></li>
-                    <li id="menu-item"><a href="#link_2" style="all: unset">選ばれる理由</a></li>
-                    <li id="menu-item"><a href="#link_3" style="all: unset">ご利用の流れ</a></li>
-                    <li id="menu-item"><a href="#link_4" style="all: unset">料金プラン</a></li>
-                    <li id="menu-item"><a href="#link_5" style="all: unset">よくあるご質問</a></li>
-                    <li id="menu-item"><a href="#btmForm" style="all: unset">無料相談</a></li>
-                    <li id="menu-item"><a href="https://ssl.form-mailer.jp/fms/1bbc88d4823445" style="all: unset"
+                    <li class="menu-item"><a href="#link_1" style="all: unset">MediTubeとは</a></li>
+                    <li class="menu-item"><a href="#link_2" style="all: unset">選ばれる理由</a></li>
+                    <li class="menu-item"><a href="#link_3" style="all: unset">ご利用の流れ</a></li>
+                    <li class="menu-item"><a href="#link_4" style="all: unset">料金プラン</a></li>
+                    <li class="menu-item"><a href="#link_5" style="all: unset">よくあるご質問</a></li>
+                    <li class="menu-item"><a href="#btmForm" style="all: unset">無料相談</a></li>
+                    <li class="menu-item"><a href="https://ssl.form-mailer.jp/fms/1bbc88d4823445" style="all: unset"
                             target="_blank">資料請求</a></li>
 
                 </ul>
@@ -228,11 +228,9 @@
                 </div> -->
             </div>
         </section>
-        <section class="cont6">
+        <section class="cont6" id="link_2">
             <div class="cont6-wrapper">
-                <a name="link_2">
-                    <h2>選ばれる<span class="b">理由</span></h2>
-                </a>
+                <h2>選ばれる<span class="b">理由</span></h2>
                 <div class="inner">
                     <div class="item item_top">
                         <div class="number">
@@ -291,11 +289,9 @@
                 </div>
             </div>
         </section>
-        <section class="cont7">
+        <section class="cont7" id="link_3">
             <div class="cont7-wapper">
-                <a name="link_3">
-                    <h2>サービスご利用<b class="small">の</b><span class="b">流れ</span></h2>
-                </a>
+                <h2>サービスご利用<b class="small">の</b><span class="b">流れ</span></h2>
                 <div class="inner">
                     <div class="list">
                         <div class="item">
@@ -366,11 +362,9 @@
                 </div>
             </div>
         </section>
-        <section class="cont9">
+        <section class="cont9" id="link_4">
             <div class="cont9-wrapper">
-                <a name="link_4">
-                    <h2>ご料金</h2>
-                </a>
+                <h2>ご料金</h2>
                 <div class="inner">
                     <div class="text_sp">※横スクロールで詳細を確認できます。</div>
                     <div class="table_wrap">
@@ -482,10 +476,8 @@
                 </div>
             </div>
         </section>
-        <section class="cont10">
-            <a name="link_5">
-                <h2>よくあるご質問</h2>
-            </a>
+        <section class="cont10" id="link_5">
+            <h2>よくあるご質問</h2>
             <div class="inner">
                 <dl>
                     <dt class="question-title">MediTubeのサービスの強みを教えてください。</dt>
@@ -552,10 +544,12 @@
             document.body.classList.toggle('active');
         });
 
-        document.getElementById('menu-item').addEventListener('click', function () {
-            document.getElementById('hamburger').classList.remove('active')
-            document.getElementById('nav-menu').classList.remove('active');
-            document.body.classList.remove('active');
+        document.querySelectorAll('.menu-item').forEach(function (element) {
+            element.addEventListener('click', function () {
+                document.getElementById('hamburger').classList.remove('active')
+                document.getElementById('nav-menu').classList.remove('active');
+                document.body.classList.remove('active');
+            });
         });
 
     </script>
